@@ -10,8 +10,8 @@
   <script>
     Pusher.logToConsole = true;
 
-    var pusher = new Pusher('a3b74a80e97458162753', {
-      cluster: 'ap1'
+    var pusher = new Pusher('isi_bebas', {
+      cluster: 'isi_bebas'
     });
 
     var channel = pusher.subscribe('my-channel-' + {{ session()->get("badge") }});
